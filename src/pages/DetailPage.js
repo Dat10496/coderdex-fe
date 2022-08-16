@@ -105,7 +105,7 @@ export const DetailPage = () => {
 										<div>{pokemon?.weight || 'Unknown'}</div>
 									</Grid>
 									<Grid item xs={6}>
-										<Typography color="white">Height</Typography>
+										<Typography color="white">Category</Typography>
 										<div>{pokemon?.category || 'Unknown'}</div>
 									</Grid>
 									<Grid item xs={6}>
