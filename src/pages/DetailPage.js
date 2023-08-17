@@ -39,7 +39,7 @@ export const DetailPage = () => {
   );
 
   const { isLoading, errorMessage } = useSelector((state) => state.pokemons);
-  console.log(errorMessage);
+
   useEffect(() => {
     dispatch(getPokemonById(id));
   }, [id, dispatch]);
