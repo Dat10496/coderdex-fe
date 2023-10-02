@@ -14,7 +14,7 @@ import { PokeType } from "../components/PokeType";
 import { getPokemonById } from "../features/pokemons/pokemonSlice";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { DOMAIN_IMG } from "../app/config";
+import { DOMAIN_IMG, DOMAIN_FE } from "../app/config";
 
 const styles = {
   container: {
@@ -61,7 +61,7 @@ export const DetailPage = () => {
                 <img
                   alt="loading"
                   className="loading"
-                  src={`${DOMAIN_IMG}/images/pokeball_gray.png`}
+                  src={`${DOMAIN_FE}/images/pokeball_gray.png`}
                   style={{ height: "4rem" }}
                 />
               </Container>
@@ -194,7 +194,7 @@ export const DetailPage = () => {
                 >
                   <CardMedia
                     component="img"
-                    image={`${pokemon?.url}`}
+                    image={`${DOMAIN_IMG}${pokemon?.url}`}
                     alt="Missing image"
                     sx={{
                       margin: "auto",

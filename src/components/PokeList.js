@@ -11,6 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changePage, typeQuery } from "../features/pokemons/pokemonSlice";
 import { Link } from "react-router-dom";
 import { pokemonTypes } from "../pokemonTypes";
+import { DOMAIN_IMG } from "../app/config";
 
 const styles = {
   container: {
@@ -245,7 +246,7 @@ export default function PokeList() {
                     >
                       <CardMedia
                         component="img"
-                        image={`${pokemon.url}`}
+                        image={`${DOMAIN_IMG}${pokemon.url}`}
                         alt="Missing image"
                         sx={{
                           margin: "auto",
